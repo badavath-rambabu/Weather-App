@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom right, #bdc3c7, #2c3e50);
+}
+
+.weather-app {
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 15px;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    font-size: 1rem;
+    height: 3rem;
+    outline: none;
+}
+
+.search-btn {
+    background-color: #3498db;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.search-btn:hover {
+    background-color: #2980b9;
+}
+
+.city-date-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.city-date-section .city {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.city-date-section .date {
+    background-color: #3498db;
+    padding: 5px 15px;
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.temperature-info {
+    text-align: center;
+}
+
+.temperature-info .temp {
+    font-size: 6rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.temperature-info .description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.temperature-info .description i {
+    font-size: 2.5rem;
+    opacity: 0.8;
+    color: #333;
+}
+
+.temperature-info .description span {
+    font-size: 2rem;
+    color: #333;
+}
+
+.additional-info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.additional-info .info-box {
+    background-color: #ecf0f1;
+    width: 150px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.additional-info .material-icons {
+    font-size: 2.5rem;
+    opacity: 0.8;
+    color: #333;
+}
+
+.additional-info .info-box div {
+    text-align: center;
+    color: #333;
+}
+
+.additional-info .info-box h3 {
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+.additional-info .info-box p {
+    font-size: 1rem;
+    opacity: 0.7;
+}
